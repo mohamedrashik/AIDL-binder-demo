@@ -5,7 +5,7 @@ This project demonstrates Inter-Process Communication (IPC) in Android using Bin
 ---
 
 ## Project Structure
-
+```agsl
 binder-aidl-demo/
 ├── commonmathlib/src/main/aidl/vendor/math         # Shared AIDL interface (game rulebook)
 │   └── IMathAreaCalculator.aidl
@@ -14,6 +14,8 @@ binder-aidl-demo/
 │   └── IMathAreaServiceImpl.kt
 ├── MathLibraryApp/src/main/java/vendor/math/app        # Client app (game player)
 │   └── MainActivity.kt
+
+```
 
 ---
 
@@ -45,7 +47,7 @@ Note: Make sure both apps are installed on the same device and signed with the s
 
 ## AIDL Interface
 
-// IMathAreaCalculator.aidl
+ IMathAreaCalculator.aidl
 ```java
 interface IMathAreaCalculator {
     /**
@@ -112,7 +114,7 @@ While this project is built for learning:
 ## References
 
 - Android Developers – AIDL: https://developer.android.com/guide/components/aidl
-- Android Binder Internals: https://source.android.com/docs/core/architecture/binder
+- Android Binder Internals: https://source.android.com/docs/core/architecture/hidl/binder-ipc
 
 ---
 
